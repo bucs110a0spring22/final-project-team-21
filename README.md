@@ -9,8 +9,10 @@
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
-#### << Team Members >>
+### Team: Team 21
+#### Jeffrey Abreu
+#### Arena Rahman
+#### Aiden Lin
 
 ***
 
