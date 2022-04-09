@@ -9,6 +9,20 @@ def main():
   print(my_list,'\n')
   my_list[0], my_list[3] = my_list[3], my_list[0]
   pygame.init()
+
+class Winnie:
+  
+
+class Ghosts:
+
+
+class Dot:
+
+
+class Background:
+
+  
+
     #Create an instance on your controller object
     #Call your mainloop
     

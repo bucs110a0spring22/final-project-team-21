@@ -26,6 +26,12 @@
 
 * << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. >>
     * For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components
+      ![GameInterfaceforCsFinalProject](GameInterfaceforCsFinalProject_2.jpg)
+  Menu: The first screen the users see. It displays the words "Name of Game", "Play" and "Instructions". It contains the name of the game, instructions and the to play button. The instruction button tells the user how to play with the arrow keys. (bottom)
+Game Screen: In this screen the user will play the game. The maze, the score, the big dots, the small dots, the number lives, the fish collected, the characters in the cage, and winnie the pooh will all appear on the game screen once the game has started. The user will use arrow keys to move up, down, left, or right. (middle)
+Game over Screen: This appears once the player lost all their lives. The statement "Game Over" appears. It displays your current score and high score. There is a play again button and an exit button. (top)
+
+      
 * << You should also have a screenshot of each screen for your final GUI >>
 
 ***        
@@ -38,11 +44,17 @@
         * url for the module documentation
         * a short description of the module
 * Class Interface Design
-    * << A simple drawing that shows the class relationships in your code (see below for an example). >>
-        * ![class diagram](assets/class_diagram.jpg)
+    * << A simple drawing that shows the class relationships in your code (see below for an example). >> ![GameInterfaceforCsFinalProject]
+         ![class diagram](assets/class_diagram.jpg)
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
-    * << You should have a list of each of your classes with a description. >>
+    * ![ClasesforCSFinalProject](ClasesforCSFinalProject.jpg)
+Winnie the Pooh: a class that defines the game character. It a nonstationary character that moves throughout the maze collecting big dots, small dots, and fish. It uses the arrow keys to move across the screen. 
+Friends: a class that defines characters that chase after the character the user moves. It can be avoided by going the opposite direction that it moves. 
+Big Dot: a class that defines an object the user collects that turns the friends into jars of honey which can be consumed by the user. It also adds 50 points to the score once collected. 
+Small Dot: a class that defines an object the user collects that gives the user 10 points per dot. The dots are in most of the maze. 
+Fish: a class that defines an object that the user collects and adds 100 points once collected. It spawns in random location throughout the maze after a random set amount of time.  
+Background: a class that defines the game screen. It sets up the maze, scoreboard, number of lives, the fish collected, the dots on the maze, and the fish on the maze. 
 
 ## Project Structure *(Software Lead)*
 
