@@ -10,16 +10,6 @@ def main():
   my_list[0], my_list[3] = my_list[3], my_list[0]
   pygame.init()
 
-class Winnie:
-  
-
-class Ghosts:
-
-
-class Dot:
-
-
-class Background:
 
   
 
