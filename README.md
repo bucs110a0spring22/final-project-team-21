@@ -2,10 +2,10 @@
 # CS110 Project Proposal
 # << Project Title >>
 ## CS 110 Final Project
-### << Semester, Year >>
+### << Spring, 2022 >>
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
-<< [repl](#) >>
+<< https://replit.com/@JeffreyAbreu/final-project-team-21#main.py >>
 
 << [link to demo presentation slides](#) >>
 
@@ -95,12 +95,12 @@ The Project is broken down into the following file structure:
 
 | Step | Procedure | Expected Results| Actual Results |
 |:----------------------:|:-------------:|:-----------------:|:--------------: |
-|  1  | navigate to folder "python3 main.py" and terminal opens| Program starts without any errors |          |
-|  2  | run Controller()  | maze background and sprites are loaded onto the screen |                 |
+|  1  | navigate to folder "python3 main.py" and terminal opens | Program starts without any errors |          |
+|  2  | run Controller()  | maze background, sprites and score are loaded onto the screen |                 |
 |  3  | press/hold left arrow | Winnie moves left when left arrow is pressed/held |
 |  4  | press/hold right arrow key | Winnie moves right when the right arrow key is pressed/held. |
 |  5  | press/hold up arrow key | Winnie moves up when the up arrow key is pressed/held|
 |  6  | press/hold down arrow key| Winnie moves down when up arrow is pressed/held.|
 |  7  | Winnie collides with wall| Winnie stops moving when he collides with a wall. |
-|  8  | Winnie collides with dots. |Winnie collects the dots when he collides with them. |
-
+|  8  | Winnie collides with dots. | Winnie collects the dots when he collides with them. |
+|  9  | dot is collected. | the displayed score increases with each dot collected. |

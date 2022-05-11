@@ -1,34 +1,13 @@
 import pygame 
-import random
 
 class Winnie(pygame.sprite.Sprite):
-  # def __init__(self, x=0, y=0, width=0, height=0, img_file=None):
-  #   super().__init__()
-  #   pygame.sprite.Sprite.__init__(self)
-  #   self.image = pygame.image.load(img_file).convert_alpha()
-  #       #get the rectangle for positioning
-  #   self.rect = self.image.get_rect()
-  #   self.rect.x = x
-  #   self.rect.y = y
-  #   self.rect.height = height
-  #   self.rect.width = width
-  #       #set other attributes
-  #   self.speed = 2
-  #   self.health = 3
-  def __init__(self, x, y, width, height):
+  def __init__(self, x, y, width, height, img_file, name):
         pygame.sprite.Sprite.__init__(self)
-        
-        ########## PROF COMMENTS ###############
-        #your code is doing what you told it to do
-        self.image = pygame.Surface([width, height])
-        self.image.fill("red")
-        #if you want the image, set an image instead of a red square
-        #self.image = pygame.image.load("assets/winniethepooh.png").convert_alpha()
-        ########################################
-      
+        self.image = pygame.image.load(img_file).convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+        self.name = name
         self.rect.height = height
         self.rect.width = width
         self.speed = 2
@@ -37,7 +16,8 @@ class Winnie(pygame.sprite.Sprite):
   Args:
     x[int]: x location of Winnie
     y[int]: y location of Winnie
-    filenames[str]: calls an image that Winnie uses as the sprite
+    width[int]: width of the hitbox of Winnie
+    height[int]: height of the hitbox of Winnie
   Return: 
     None
   '''
@@ -50,8 +30,6 @@ class Winnie(pygame.sprite.Sprite):
       self.rect.x -= self.speed
   def move_right(self):
       self.rect.x += self.speed
-
-  
   '''
   Moves Winnie on the x and y axis depending on which direction the player wants to go.
   Args:
@@ -59,13 +37,5 @@ class Winnie(pygame.sprite.Sprite):
   Return: 
     None
   '''
+
   
-  # def collide(self, opponent):
-  #   '''
-  #   allows for the player to collide and collect the dots, superdots, and fish
-  #   Args = None
-  #   return = none
-  #   '''
-  #   if (random.randrange(1)):
-  #     self.health -= 1
-  #     return False
