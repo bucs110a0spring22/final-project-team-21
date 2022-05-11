@@ -93,8 +93,14 @@ The Project is broken down into the following file structure:
 
 ## ATP
 
-| Step                  | Procedure     | Expected Results  | Actual Results |
-| ----------------------|:-------------:| -----------------:| -------------- |
-|  1  | Run Counter Program  | GUI window appears with count = 0  |          |
-|  2  | click count button  | display changes to count = 1 |                 |
-etc...
+| Step | Procedure | Expected Results| Actual Results |
+|:----------------------:|:-------------:|:-----------------:|:--------------: |
+|  1  | navigate to folder "python3 main.py" and terminal opens| Program starts without any errors |          |
+|  2  | run Controller()  | maze background and sprites are loaded onto the screen |                 |
+|  3  | press/hold left arrow | Winnie moves left when left arrow is pressed/held |
+|  4  | press/hold right arrow key | Winnie moves right when the right arrow key is pressed/held. |
+|  5  | press/hold up arrow key | Winnie moves up when the up arrow key is pressed/held|
+|  6  | press/hold down arrow key| Winnie moves down when up arrow is pressed/held.|
+|  7  | Winnie collides with wall| Winnie stops moving when he collides with a wall. |
+|  8  | Winnie collides with dots. |Winnie collects the dots when he collides with them. |
+

@@ -2,7 +2,7 @@ import pygame
 
 class Dot(pygame.sprite.Sprite):
 
-  def __init__ (self, x, y, img_file=""):
+  def __init__ (self, x, y, img_file="", is_superdot= False):
     '''
     creates a small dot that the player collects to increase score
     x: int, x-coordinate of the dot
@@ -14,6 +14,9 @@ class Dot(pygame.sprite.Sprite):
     self.rect = self.image.get_rect()
     self.rect.x = x
     self.rect.y = y
+    self.is_superdot = is_superdot
+    if self.super_dot:
+        """double the size"""
 
 
   def superDot(self, x, y, img_file=""):
