@@ -3,13 +3,15 @@ import random
 
 class Ghost(pygame.sprite.Sprite):
   def __init__(self, color, x, y, width, height):
-    """
-    iniates the movement of the ghosts which chase the player
+    '''
+    creates a ghost sprite that is an enemy in the game
+    color = (str) the color you want the ghost to be
     x = (int) x location of each of the ghost
     y = (int) y location of each of the ghost
-    img_file = (str) calls the image file of the ghost
+    width = (int) width of the ghost
+    height = (int) height of the ghost
     return = none
-    """
+    '''
     pygame.sprite.Sprite.__init__(self)
     self.image = pygame.Surface([width, height])
     self.image.fill(color)
@@ -20,5 +22,10 @@ class Ghost(pygame.sprite.Sprite):
     self.rect.width = width
     
   def update(self):
-      self.rect.x += random.randint(-5, 5)
-      self.rect.y += random.randint(-5, 5)
+    '''
+    creates random movement for the ghosts
+    Args = None
+    Return = None
+    '''
+    self.rect.x += random.randint(-5, 5)
+    self.rect.y += random.randint(-5, 5)
