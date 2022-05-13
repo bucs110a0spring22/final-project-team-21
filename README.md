@@ -6,7 +6,7 @@
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
 https://replit.com/@JeffreyAbreu/final-project-team-21#main.py
-
+![CSFinalProjectPresentation](CSFinalProjectPresentation.mp4)
 https://docs.google.com/presentation/d/1xdPA0jjXyG17GTlL6O6lLGXNeZ8jRuFPlkdGW8SNqMI/edit#slide=id.g11bf94c026e_2_45
 
 ### Team: Team 21
@@ -86,7 +86,7 @@ The Project is broken down into the following file structure:
     * gamewin.png
     * scores.txt
 * etc
-    * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
+    * CSFinalProject.mp4
 
 ***
 

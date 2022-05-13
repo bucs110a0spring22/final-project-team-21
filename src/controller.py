@@ -1,4 +1,3 @@
-import json
 import pygame
 import sys
 from src import winnie
