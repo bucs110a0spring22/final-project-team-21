@@ -1,3 +1,4 @@
+import json
 import pygame
 import sys
 from src import winnie
@@ -110,9 +111,14 @@ class Controller:
 
           if pygame.sprite.spritecollide(self.winnie, self.ghosts, False):
             self.state = "GAMEOVER"
-
+            record = open("assets/scores.txt", 'a+')
+            record.write("\n")
+            record = record.write("Score: " + str(score))
           if not self.alldots:
             self.state = "WIN"
+            record = open("assets/scores.txt", 'a+')
+            record.write("\n")
+            record = record.write("Score: " + str(score))
           self.screen.blit(self.background, (0, 0))
           self.screen.blit(score_screen, (0,0))
           self.ghosts.update()

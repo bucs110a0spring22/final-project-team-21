@@ -84,6 +84,7 @@ The Project is broken down into the following file structure:
     * gamelose.png
     * gamescreen.png
     * gamewin.png
+    * scores.txt
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
@@ -94,26 +95,26 @@ The Project is broken down into the following file structure:
 
 ### Software Lead - Arena Rahman
 
-Worked as integration specialist by ensuring compatibility of the GUI against the controller by running frequent tests to guage the efficiency and qaulity of the code. I outlined the process of the different classes and methods that should be implemented in the ATP. I proposed adding images for Winnie and resizing the image when it was too to fit in the maze. I also researched how to add the title for the pygame window and showed my group the documentation for different pygame methods. I showed my group prior examples of pacman and games made in the class to provide us inspriation on what methods we can implement. Whenever we had a question or disagreement on something I would either reach out to the professor or TA to help resolve the problems in the group 
+Worked as integration specialist by ensuring compatibility of the GUI against the controller by running frequent tests to guage the efficiency and qaulity of the code. I outlined the process of the different classes and methods that should be implemented in the ATP. I proposed adding images for Winnie and resizing the image when it was too big to fit in the maze and helped create the walls. I also researched how to add the title for the pygame window and showed my group the documentation for different pygame methods. I showed my group prior examples of pacman and games made in the class to provide us inspriation on what methods we can implement. Whenever we had a question on the code I would either reach out to the professor or TA to help resolve the problems in the group and made sure everyone was on the same page on where we should be in the project timeline.  
 
 ### Front End Specialist - Jeffrey Abreu
 
-Front-end lead conducted significant research on the GUI and controller of the program. The GUI in this program consists of one game-screen. The game-screen displays a maze background, as well as the dot, ghost, and player objects. I helped make Winnie fit with the appropriate rectangle object, as well as modify the image so that it looks better on the screen. I also worked with the Back End Specialist on the controller. I assisted in placing the wall objects on the screen, as well as implementing the 'collide with wall' feature for Winnie and the ghosts.
+Front-end lead conducted significant research on the GUI and controller of the program. The GUI in this program consists of one game-screen. The game-screen displays a maze background, as well as the dot, ghost, and player objects. He helped make Winnie fit with the appropriate rectangle object, as well as modify the image so that it looks better on the screen. He also worked with the Back End Specialist on completing the controller. He assisted in placing the wall objects on the screen, as well as implementing the 'collide with wall' feature for Winnie and the ghosts.
 
 ### Back End Specialist - Aiden Lin
 
-As the back-end specialist, I created all the classes: dot, maze, ghost and winnie that the controller would later use to run the game. All of us took part in placing the invisible wall sprites onto the appropriate locations so that the ghosts and Winnie will not be able to go through them. I created and placed the dots onto the gamescreen and made the score increase as Winnie collects/collides with the dots. I also did a large part of the controller along with the front-end specialist.
+As the back-end specialist, he created all the classes: dot, maze, ghost and winnie that the controller would later use to run the game. All of us took part in placing the invisible wall sprites onto the appropriate locations so that the ghosts and Winnie will not be able to go through them. He created and placed the dots onto the gamescreen and made the score increase as Winnie collects/collides with the dots. He also did a large part of the controller along with the front-end specialist. 
 
 ## Testing *(Software Lead)*
 
-* Our testing strategy is first we run the game and check if the Controller class class is working  by seeing if the game screen which is the maze image boots up. To see if all the sprites loaded, we check if the  Then, we press/hold the up, down, left, or right keys to see if the sprite object that represents the player, Winnie, moves. This tests the single press and holds of the arrow key within the game. After that, we move near any of the walls on the maze to see whether Winnie collides with the walls. We see if this collision will stop Winnie's motion and moves him back so he can move somewhere else that is not a wall. Additionally, we check if Winnie collects/collides with the dots by pressing any of the arrow keys. We see if once Winnie collides with dots that the dots disappear from the screen and increase the score by 10 each time he collects a dot. Also, we test if the collision between the ghost and Winnie works by moving Winnie to one of the ghosts and seeing if once they collide that the text "Game Over" appears. We also check to see if the ghosts are randomly moving if they are not moving in a patterned motion while the game is running. In addition, once all the dots all collected by Winnie, we check to see if the text "You Win" appears, which we programmed to only appear when the sprite group: alldots is empty. 
-    * << Example >>
+* Our testing strategy is first we run the game and check if the Controller class class is working  by seeing if the game screen which is the maze image boots up. To see if all the sprites loaded, we check if the ghosts, dots and winnie have been loaded onto the screen. The walls are invisible so we check if they are there by moving winnie. We press/hold the up, down, left, or right keys to see if the sprite object that represents the player, Winnie, moves. This tests the single press and holds of the arrow key within the game. After that, we move near any of the walls on the maze to see whether Winnie collides with the walls. We see if this collision will stop Winnie's motion and moves him back so he can move somewhere else that is not a wall. Additionally, we check if Winnie collects/collides with the dots by pressing any of the arrow keys. We see if once Winnie collides with dots that the dots disappear from the screen and increase the score by 10 each time he collects a dot. Also, we test if the collision between the ghost and Winnie works by moving Winnie to one of the ghosts and seeing if once they collide that the text "Game Over" appears. We also check to see if the ghosts are randomly moving if they are not moving in a patterned motion while the game is running. In addition, once all the dots all collected by Winnie, we check to see if the text "You Win" appears, which we programmed to only appear when the sprite group: alldots is empty. 
+
 
 ## ATP
 
 | Step | Procedure | Expected Results| Actual Results |
 |:----------------------:|:-------------:|:-----------------:|:--------------: |
-|  1  | navigate to folder "python3 main.py" and terminal opens | Program starts without any errors |          |
+|  1  | press the Run button on repl which navigates to folder "python3 main.py" and opens the pygame library to be used in our code| Program starts without any errors |          |
 |  2  | run Controller()  | maze background, sprites and score are loaded onto the screen |                 |
 |  3  | press/hold left arrow | Winnie moves left when left arrow is pressed/held |
 |  4  | press/hold right arrow key | Winnie moves right when the right arrow key is pressed/held. |
