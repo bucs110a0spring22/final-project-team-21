@@ -86,8 +86,9 @@ The Project is broken down into the following file structure:
     * gamescreen.png
     * gamewin.png
     * scores.txt
+    * UpdatedClassList.jpg
 * etc
-    * none
+    * demonstration.mp4
 
 ***
 
